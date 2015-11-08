@@ -1,0 +1,24 @@
+{
+  "name": "metalsmith-polyglot",
+  "version": "0.3.0",
+  "description": "Metalsmith plugin for translation paths",
+  "main": "polyglot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdoxyz/metalsmith-polyglot.git"
+  },
+  "keywords": [
+    "metalsmith",
+    "translations",
+    "plugin"
+  ],
+  "author": "Fernando Valverde <fdov88@gmail.com> (http://visualcosita.xyz)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fdoxyz/metalsmith-polyglot/issues"
+  },
+  "homepage": "https://github.com/fdoxyz/metalsmith-polyglot#readme"
+}
