@@ -1,6 +1,6 @@
 # metalsmith-polyglot
 
-  A Metalsmith plugin that creates translation paths for files in a website using the convention for relative paths `lang/path` with the exception of the base language that is omitted.
+  A Metalsmith plugin that creates translation paths for files in a website using `lang/path` as a convention for relative paths of translated files (the base language is omitted).
 
 ## Installation
 
@@ -8,7 +8,9 @@
 
 ## Usage
 
-  This plugin is intented for projects that use an output hierarchy that mirrors your base language content with a `root based` and `language-code` ordered translations (supports permalinks by default). It is required to tag your files' language code using front matter Ex:
+  This plugin is intented for projects that use an output hierarchy that mirrors your base language content with a `root based` and `language-code` ordered translations (supports [permalinks](https://github.com/segmentio/metalsmith-permalinks) by default). It is required to tag your files' language code using front matter `lang: es`.
+
+  The following is an example structure for a translated website:
 
 ```
 src/
@@ -26,12 +28,14 @@ src/
             second-post/index.html
 ```
 
-  The polyglot plugin will parse the structure and filenames that match and output a translation path on to the metadata, available for templates to use for each language as in `translationPath.es` or `translationPath.en` for every file.
+  The polyglot plugin will parse the structure and filenames that match and output a translation path on to the metadata, available for templates to use for each language as in `translationPath.es` or `translationPath.en` for every file. In the following example, a root `index.html` homepage is generated and permalinks are filtered to work with the contents only (using the [metalsmith-branch](https://github.com/ericgj/metalsmith-branch) plugin).
 
 ```js
-var Metalsmith = require('metalsmith');
-var permalinks = require('metalsmith-permalinks');
-var polyglot = require('metalsmith-polyglot');
+var Metalsmith = require('metalsmith'),
+    permalinks = require('metalsmith-permalinks'),
+    branch = require('metalsmith-branch'),
+    polyglot = require('metalsmith-polyglot'),
+    layouts = require('metalsmith-layouts');
 
 var metalsmith = new Metalsmith(__dirname)
     .use(branch('content/post/**.html')
@@ -64,11 +68,18 @@ a(href="#{translationPath.fr}") FRENCH
 
 #### Options
 
-  **baseLang:** The base language of the project. Defaults to "en".
+###### **baseLang**
+    **Type:** String
+    **Description:** The base language of the project. Defaults to "en".
 
-  **permalinksEnabled:** Boolean variable to indicate whether permalinks are used or not. Defaults to **true**.
+###### **permalinksEnabled**
+    **Type:** Boolean
+    **Description:** Indicates whether permalinks are used or not. Defaults to **true**
+     variable to indicate whether permalinks are used or not. Defaults to **true**.
 
-  **emptyRedirect:** When working on a project and a file is not translated, send a specific url path to redirect every translation path. Defaults to the base language root url "/".
+###### **emptyRedirect**
+    **Type:** String
+    **Description:** When working on a project and a file is not translated, send a specific url path to redirect every translation path. Defaults to the base language root url "/".
 
 ## License
 
