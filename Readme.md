@@ -72,18 +72,17 @@ a(href="#{translationPath.fr}") FRENCH
 
 #### Options
 
-**baseLang**
-* Type: String
-* Description: The base language of the project. Defaults to "en".
+* **baseLang**
+  * Type: String
+  * Description: The base language of the project. Defaults to "en".
 
-**permalinksEnabled**
-* Type: Boolean
-* Description: Indicates whether permalinks are used or not. Defaults to **true**
-     variable to indicate whether permalinks are used or not. Defaults to **true**.
+* **permalinksEnabled**
+  * Type: Boolean
+  * Description: Indicates whether permalinks are used or not. Defaults to true.
 
-**emptyRedirect**
-* Type: String
-* Description: When working on a project and a file is not translated, send a specific url path to redirect every translation path. Defaults to the base language root url "/".
+* **emptyRedirect**
+  * Type: String
+  * Description: When working on a project and a file is not translated, send a specific url path to redirect every translation path. Defaults to the base language root url "/".
 
 ## License
 
