@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-polyglot",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Metalsmith plugin for translation paths",
   "main": "polyglot.js",
   "scripts": {

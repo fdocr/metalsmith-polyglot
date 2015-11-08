@@ -14,7 +14,7 @@ function permalinkAwareUrl(url, permalinks) {
         cleanUrl = cleanUrl.concat(parts[i], "/");
     }
 
-    return (cleanUrl === "") ? "/" : cleanUrl.substr(0, cleanUrl.length-1);
+    return (cleanUrl === "/") ? "/" : cleanUrl.substr(0, cleanUrl.length-1);
 }
 
 module.exports = function(options) {
