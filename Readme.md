@@ -1,6 +1,6 @@
 # metalsmith-polyglot ![version](https://img.shields.io/badge/version-0.3.0-blue.svg)
 
-  A Metalsmith plugin that creates translation paths for files in a website using `lang/path` as a convention for relative paths of translated files (the base language is omitted).
+  A Metalsmith plugin that creates relative paths metadata for files in a website using `lang/path` as a convention for translated files in your domain (the base language lang code is omitted). This means no need of javscript or complicated definitions for translating.
 
 ## Installation
 

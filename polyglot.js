@@ -57,7 +57,7 @@ module.exports = function(options) {
                     files[currentFileKey].translationPath[otherFileLang] = (emptyRedirect === undefined) ? "/".concat(otherFileLang) : emptyRedirect;
                     if (currentFileLang === otherFileLang) continue;
                     if (siblings[otherFileLang].indexOf(strippedUrl) >= 0) {
-                        translationUrl = (otherFileLang === baseLang) ? strippedUrl : (otherFileLang + "/" + strippedUrl);
+                        translationUrl = (otherFileLang === baseLang) ? "/".concat(strippedUrl) : ("/".concat(otherFileLang, "/", strippedUrl));
                         files[currentFileKey].translationPath[otherFileLang] = permalinkAwareUrl(translationUrl, permalinksEnabled);
                     }
                 }
