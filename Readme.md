@@ -19,16 +19,20 @@ src/
         post/
             first-post/
                 index.html
-            second-post/index.html
+            second-post/
+                index.html
     es/
         index.html
         post/
             first-post/
                 index.html
-            second-post/index.html
+            second-post/
+                index.html
 ```
 
   The polyglot plugin will parse the structure and filenames that match and output a translation path on to the metadata, available for templates to use for each language as in `translationPath.es` or `translationPath.en` for every file. In the following example, a root `index.html` homepage is generated and permalinks are filtered to work with the contents only (using the [metalsmith-branch](https://github.com/ericgj/metalsmith-branch) plugin).
+
+  Note that the root homepage is also translated. Using the front matter `lang` tag will tell polyglot to search for matches and generate translationPath metadata available at template time.
 
 ```js
 var Metalsmith = require('metalsmith'),
@@ -68,16 +72,16 @@ a(href="#{translationPath.fr}") FRENCH
 
 #### Options
 
-###### **baseLang**
+###### baseLang
     **Type:** String
     **Description:** The base language of the project. Defaults to "en".
 
-###### **permalinksEnabled**
+###### permalinksEnabled
     **Type:** Boolean
     **Description:** Indicates whether permalinks are used or not. Defaults to **true**
      variable to indicate whether permalinks are used or not. Defaults to **true**.
 
-###### **emptyRedirect**
+###### emptyRedirect
     **Type:** String
     **Description:** When working on a project and a file is not translated, send a specific url path to redirect every translation path. Defaults to the base language root url "/".
 
