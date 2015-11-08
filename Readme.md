@@ -82,7 +82,7 @@ a(href="#{translationPath.fr}") FRENCH
 
 * **emptyRedirect**
   * Type: String
-  * Description: When working on a project and a file is not translated, send a specific url path to redirect every translation path. Defaults to the base language root url "/".
+  * Description: When working on a project and a file is not translated, send a specific url path to redirect every translation path. Defaults to the root url of the wanted language "/langCode" ("/" for base language missing path).
 
 ## License
 
