@@ -1,6 +1,4 @@
-# metalsmith-polyglot
-
-![version](https://img.shields.io/badge/version-0.3.0-blue.svg)
+# metalsmith-polyglot ![version](https://img.shields.io/badge/version-0.3.0-blue.svg)
 
   A Metalsmith plugin that creates translation paths for files in a website using `lang/path` as a convention for relative paths of translated files (the base language is omitted).
 
@@ -74,18 +72,18 @@ a(href="#{translationPath.fr}") FRENCH
 
 #### Options
 
-###### baseLang
-    Type: String
-    Description: The base language of the project. Defaults to "en".
+**baseLang**
+* Type: String
+* Description: The base language of the project. Defaults to "en".
 
-###### permalinksEnabled
-    Type: Boolean
-    Description: Indicates whether permalinks are used or not. Defaults to **true**
+**permalinksEnabled**
+* Type: Boolean
+* Description: Indicates whether permalinks are used or not. Defaults to **true**
      variable to indicate whether permalinks are used or not. Defaults to **true**.
 
-###### emptyRedirect
-    Type: String
-    Description: When working on a project and a file is not translated, send a specific url path to redirect every translation path. Defaults to the base language root url "/".
+**emptyRedirect**
+* Type: String
+* Description: When working on a project and a file is not translated, send a specific url path to redirect every translation path. Defaults to the base language root url "/".
 
 ## License
 
