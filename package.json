@@ -2,9 +2,9 @@
   "name": "metalsmith-polyglot",
   "version": "0.3.2",
   "description": "Metalsmith plugin for translation paths",
-  "main": "polyglot.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/fdoxyz/metalsmith-polyglot/issues"
   },
-  "homepage": "https://github.com/fdoxyz/metalsmith-polyglot#readme"
+  "homepage": "https://github.com/fdoxyz/metalsmith-polyglot#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.3"
+  }
 }
