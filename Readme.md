@@ -70,7 +70,7 @@ a(href="#{translationPath.es}") SPANISH
 a(href="#{translationPath.fr}") FRENCH
 ```
 
-#### Options
+## Options
 
 * **baseLang**
   * Type: String
@@ -84,13 +84,13 @@ a(href="#{translationPath.fr}") FRENCH
   * Type: String
   * Description: When working on a project and a file is not translated, send a specific url path to redirect every translation path. Defaults to the root url of the wanted language "/langCode" ("/" for base language missing path).
 
-#### TODO
+## TODO
 
-* [] Make sure permalinksEnabled set as `false` works appropriately
-* [] Thoroughly test helpers, maybe even consider using `require('path')` but I don't feel its that necessary (maybe I'm a savage)
-* [] A complete suite of directory processing with & without custom emptyRedirect url
-* [] Translation paths to own languages (file with `lang: en` on translationPath.en) have links to their locale home directory unless emptyRedirect is set, think this through and possible advantages to elaborate on something more useful
-* [] Long term goal is migration to ES6 before 1.0
+* [ ] Make sure permalinksEnabled set as `false` works appropriately
+* [ ] Thoroughly test helpers, maybe even consider using `require('path')` but I don't feel its that necessary (maybe I'm a savage)
+* [ ] A complete suite of directory processing with & without custom emptyRedirect url
+* [ ] Translation paths to own languages (file with `lang: en` on translationPath.en) have links to their locale home directory unless emptyRedirect is set, think this through and possible advantages to elaborate on something more useful
+* [ ] Long term goal is migration to ES6 before 1.0
 
 ## License
 
