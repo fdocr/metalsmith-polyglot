@@ -70,6 +70,10 @@ a(href="#{translationPath.es}") SPANISH
 a(href="#{translationPath.fr}") FRENCH
 ```
 
+## Guides
+
+1. [Blog post with a real case example for a simple set up](http://visualcosita.xyz/post/metalsmith-polyglot/)
+
 ## Options
 
 * **baseLang**
