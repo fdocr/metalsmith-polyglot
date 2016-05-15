@@ -4,7 +4,7 @@
   "description": "Metalsmith plugin for translation paths",
   "main": "lib/index.js",
   "scripts": {
-    "test": "make test"
+    "test": "./node_modules/.bin/mocha --reporter mocha-junit-reporter"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/fdoxyz/metalsmith-polyglot#readme",
   "devDependencies": {
     "chai": "^3.4.1",
-    "mocha": "^2.3.3"
+    "mocha": "^2.3.3",
+    "mocha-junit-reporter": "^1.11.1"
   }
 }
