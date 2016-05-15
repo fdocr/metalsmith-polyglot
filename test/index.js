@@ -46,7 +46,7 @@ describe('Polyglot', function() {
                 results.push(helpers.permalinkAwarePath(filePaths[i], permalinksEnabled[i]));
             }
 
-            expect(results).to.deep.equal(expected);
+            expect(results).to.not.deep.equal(expected);
         });
     });
 });
