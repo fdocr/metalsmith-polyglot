@@ -12,6 +12,4 @@ MAINTAINER Fernando Valverde <fdov88@gmail.com>
 
 WORKDIR /opt/test
 
-ADD . /opt/test
-
 CMD ["npm", "test"]
