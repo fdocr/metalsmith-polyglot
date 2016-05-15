@@ -4,7 +4,7 @@
   "description": "Metalsmith plugin for translation paths",
   "main": "lib/index.js",
   "scripts": {
-    "test": "ls -l && ./node_modules/.bin/mocha --reporter mocha-junit-reporter"
+    "test": "./node_modules/.bin/mocha --reporter mocha-junit-reporter && mv test-results.xml /opt/results"
   },
   "repository": {
     "type": "git",
