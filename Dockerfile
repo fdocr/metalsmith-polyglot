@@ -12,4 +12,8 @@ MAINTAINER Fernando Valverde <fdov88@gmail.com>
 
 WORKDIR /opt/test
 
+ADD . /opt/test
+
+RUN npm install
+
 CMD ["npm", "test"]
