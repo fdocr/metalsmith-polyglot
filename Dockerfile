@@ -14,4 +14,6 @@ WORKDIR /opt/test
 
 ADD . /opt/test
 
-CMD ["make", "test"]
+RUN npm install
+
+CMD ["npm", "test"]
