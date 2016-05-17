@@ -21,7 +21,7 @@ describe('Polyglot', function() {
                 results.push(helpers.stripLang(filePaths[i], languages[i]));
             }
 
-            expect(results).to.deep.equal(expected);
+            expect(results).to.not.deep.equal(expected);
         });
     });
 
