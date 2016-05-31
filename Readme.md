@@ -4,7 +4,7 @@
 
 ## Installation
 
-    $ npm install metalsmith-polyglot
+    $ npm install metalsmith-polyglot --save
 
 ## Usage
 
